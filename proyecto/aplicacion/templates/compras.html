@@ -1,0 +1,14 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Compra</title>
+  </head>
+  <body>
+
+    {% for p in compras %}
+            {{p.Persona}} - {{p.Producto}} - {{p.Fecha}} - {{p.Hora}}  <br>
+        {% endfor %}
+
+  </body>
+</html>

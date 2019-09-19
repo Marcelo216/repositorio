@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, include, url
-
+from aplicacion import views 
 from django.contrib import admin
 admin.autodiscover()
 
@@ -10,4 +10,6 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^personas/',views.listarPersona),
+    url(r'^compras/',views.listarCompra),
+    url(r'^productos/',views.listarProducto),
 )
