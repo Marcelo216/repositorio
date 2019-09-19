@@ -8,7 +8,7 @@ def listarPersona(request):
 
         idPersona = request.GET.get('id')
 
-        p = Persona.objects.filter(id=idPersona)
+        p = p.objects.filter(id=idPersona)
 
 
     else:
@@ -24,7 +24,7 @@ def listarProducto(request):
 
         idProducto = request.GET.get('id')
 
-        p = Producto.objects.filter(id=idProducto)
+        p = p.objects.filter(id=idProducto)
 
 
     else:
@@ -39,7 +39,7 @@ def listarCompra(request):
 
         idCompra = request.GET.get('id')
 
-        p = Compra.objects.filter(id=idCompra)
+        p = p.objects.filter(id=idCompra)
 
 
     else:
